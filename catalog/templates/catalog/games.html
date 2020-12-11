@@ -1,0 +1,25 @@
+{% extends "catalog/base.html" %}
+
+    {% block title %}
+        <div class="brand">Games list</div>
+    {% endblock %}
+
+    {% block content %}
+    <div class="container">
+    	
+	    <div class="row">
+	    	{% for game in games %}
+				<div class="col-6">					
+					<img class="card-img-top" src="{{ game.picture }}" alt="Card image cap">
+					<div style="text-align: center;">
+						<h5><a style="color: white; font-size: 25px;" href="{% url 'catalog:detail' game.id  %}">{{game.title}}</a></h5>
+						<a href="{% url 'catalog:listresult' game.id %}" class="btn btn-primary">Display results</a>
+					</div>
+					
+				</div>
+			{% endfor %}
+		</div>
+		
+	</div>
+		
+	{% endblock %}

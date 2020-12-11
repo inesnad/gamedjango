@@ -1,0 +1,20 @@
+{% extends "catalog/base.html" %}
+
+    {% block title %}
+    	{% for result in results %}
+        <div class="brand">Results for {{result.game}} </div>
+        {% endfor %}
+			
+    {% endblock %}
+
+        {% block content %}			
+		
+			{% for result in results %}
+			    <p>{{result.player}} : {{result.game}} // {{result.score}}</p>
+
+			{% endfor %}
+
+
+			<a href="{% url 'catalog:addResult' %}" class="btn btn-primary">Add a result</a>
+			
+		{% endblock %}
