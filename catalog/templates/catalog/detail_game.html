@@ -1,0 +1,13 @@
+{% extends "catalog/base.html" %}
+{% load i18n %}
+    {% block title %}
+        <div class="brand">{% blocktrans%}{{game}}{% endblocktrans%}</div>
+    {% endblock %}
+
+    {% block content %}
+
+<p>{{game}}</p>
+<p>{{consoles}}</p>
+
+		
+	{% endblock %}

@@ -108,7 +108,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+gettext = lambda s: s
+LANGUAGES = (
+    ("fr", gettext("French")),
+    ("en", gettext("English")),
+)
+
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 

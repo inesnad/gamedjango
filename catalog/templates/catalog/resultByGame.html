@@ -1,5 +1,5 @@
 {% extends "catalog/base.html" %}
-
+{% load i18n %}
     {% block title %}
     	{% for result in results %}
         <div class="brand">Results for {{result.game}} </div>
@@ -9,12 +9,39 @@
 
         {% block content %}			
 		
+		<table
+		data-toggle="table"
+		data-search="true"
+		data-show-columns="true">
+		<thead>
+		  <tr class="tr-class-1">
+			<th data-field="name" rowspan="2" data-valign="middle">{% blocktrans%}Name{% endblocktrans%}</th>
+			<th>{% blocktrans%}Detail{% endblocktrans%}</th>
+			<th>{% blocktrans%}Description{% endblocktrans%}</th>
+			<th>{% blocktrans%}Consoles{% endblocktrans%}</th>
+			<th>{% blocktrans%}Actions{% endblocktrans%}</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {% for game in games %}
+		  <tr>
+			<td><a href="{% url 'catalog:detail' game.id  %}">{{game.title}}</a></td>
+			<td style="width: 10%" ><img class="card-img-top" src="{{ game.picture }}" alt="Card image cap"></td>
+			<td>Bla bla bla</td>
+			<td>{{ game.consoles.all.0 }}</td>
+			<td><a href="{% url 'catalog:listresult' game.id %}">{% blocktrans%}Display results{% endblocktrans%}</a></td>
+		  </tr>
+		  {% endfor %}
+		</tbody>
+	  </table>
+
+
 			{% for result in results %}
 			    <p>{{result.player}} : {{result.game}} // {{result.score}}</p>
 
 			{% endfor %}
 
 
-			<a href="{% url 'catalog:addResult' %}" class="btn btn-primary">Add a result</a>
+			<a href="{% url 'catalog:addResult' %}" class="btn btn-primary">{% blocktrans%}Add a result{% endblocktrans%}</a>
 			
 		{% endblock %}

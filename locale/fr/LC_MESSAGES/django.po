@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-27 12:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\catalog\forms.py:18
+msgid "Invalid score"
+msgstr "Score non valide"
+
+#: .\catalog\templates\catalog\base.html:13
+msgid "Games"
+msgstr "Jeux"
+
+#: .\catalog\templates\catalog\base.html:49
+#: .\catalog\templates\catalog\base.html:65
+msgid "Games & fun"
+msgstr "Games & fun"
+
+#: .\catalog\templates\catalog\base.html:71
+msgid "Home"
+msgstr "Accueil"
+
+#: .\catalog\templates\catalog\base.html:74
+msgid "About"
+msgstr "A propos"
+
+#: .\catalog\templates\catalog\base.html:77
+msgid "All games"
+msgstr "Tous les jeux"
+
+#: .\catalog\templates\catalog\base.html:80
+msgid "Connect"
+msgstr "Se connecter"
+
+#: .\catalog\templates\catalog\games.html:4
+msgid "Games list"
+msgstr "Liste des jeux"
+
+#: .\catalog\templates\catalog\games.html:16
+msgid "Display results"
+msgstr "Afficher les résultats"
+
+#: .\catalog\templates\catalog\index.html:14
+msgid "Welcome on Games & fun"
+msgstr "Bienvenue sur Games & fun"
+
+#: .\catalog\templates\catalog\index.html:26
+msgid "3 last games"
+msgstr "3 derniers jeux"
+
+#: .\catalog\templates\catalog\index.html:39
+msgid "3 best scores"
+msgstr "3 meilleurs scores"
+
+#: .\catalog\templates\catalog\resultByGame.html:18
+msgid "Add a result"
+msgstr "Ajouter un résultat"
+
+#: .\game\settings.py:113
+msgid "French"
+msgstr "Français"
+
+#: .\game\settings.py:114
+msgid "English"
+msgstr "Anglais"

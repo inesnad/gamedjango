@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Games</title>
+    <title>{% blocktrans%}Games{%endblocktrans %}</title>
     {% load static %}
 
     <!-- Bootstrap Core CSS -->
@@ -45,7 +46,7 @@
 
 <body>
     {% block title %}
-        <div class="brand">Games & fun</div>
+        <div class="brand">{% blocktrans%}Games & fun{% endblocktrans%}</div>
     {% endblock %}
 
     {% block navbar %}
@@ -61,22 +62,22 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                        <a class="navbar-brand" href="index.html">Games & fun</a>
+                        <a class="navbar-brand" href="index.html">{% blocktrans%}Games & fun{% endblocktrans%}</a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.html">{% blocktrans%}Home{% endblocktrans%}</a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.html">{% blocktrans%}About{% endblocktrans%}</a>
                             </li>
                             <li>
-                                <a href="{% url 'catalog:list' %}">All games</a>
+                                <a href="{% url 'catalog:list' %}">{% blocktrans%}All games{% endblocktrans%}</a>
                             </li>
                             <li>
-                                <a href="contact.html">Connect</a>
+                                <a href="contact.html">{% blocktrans%}Connect{% endblocktrans%}</a>
                             </li>
                         </ul>
                     </div>
